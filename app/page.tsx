@@ -6,10 +6,10 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="container">
-          <h1>🚀 SmartFone Pro</h1>
-          <p>O smartphone mais avançado do mercado com tecnologia de ponta</p>
+          <h1>📱 iPhone 16 Pro Max</h1>
+          <p>O iPhone mais avançado de todos os tempos. Tecnologia revolucionária em suas mãos.</p>
           <button className="btn-primary">
-            Comprar Agora - 50% OFF
+            Comprar iPhone 16 - 30% OFF
           </button>
         </div>
       </section>
@@ -22,34 +22,61 @@ export default function Home() {
               <div style={{
                 width: '300px',
                 height: '400px',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #1a1a1a 0%, #333333 100%)',
                 borderRadius: '12px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 fontSize: '4rem',
                 color: 'white',
-                margin: '0 auto'
+                margin: '0 auto',
+                position: 'relative',
+                overflow: 'hidden'
               }}>
-                📱
+                <div style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  fontSize: '6rem'
+                }}>
+                  📱
+                </div>
+                <div style={{
+                  position: 'absolute',
+                  bottom: '20px',
+                  right: '20px',
+                  background: 'rgba(255,255,255,0.1)',
+                  padding: '5px 10px',
+                  borderRadius: '20px',
+                  fontSize: '0.8rem',
+                  color: 'white'
+                }}>
+                  iPhone 16
+                </div>
               </div>
             </div>
             
             <div className="product-info">
-              <h2>SmartFone Pro - Revolução Tecnológica</h2>
+              <h2>iPhone 16 Pro Max - Revolução Apple</h2>
               <p>
-                Descubra o smartphone que está mudando a forma como você se conecta com o mundo. 
-                Com câmera de 108MP, bateria de 5000mAh e processador de última geração, 
-                o SmartFone Pro oferece uma experiência incomparável.
+                Descubra o iPhone mais poderoso já criado. Com chip A18 Pro, câmera de 48MP, 
+                tela Super Retina XDR de 6.7" e design em titânio. Uma experiência incomparável.
               </p>
               
               <div className="price">
-                <span className="original-price">R$ 2.999</span>
-                R$ 1.499
+                <span className="original-price">R$ 9.999</span>
+                R$ 6.999
+              </div>
+              
+              <div style={{ marginBottom: '20px' }}>
+                <p style={{ color: '#ff6b6b', fontWeight: 'bold', fontSize: '1.1rem' }}>
+                  ⚡ OFERTA LIMITADA: Apenas 100 unidades disponíveis
+                </p>
               </div>
               
               <button className="btn-primary" style={{ fontSize: '1.2rem', padding: '18px 40px' }}>
-                🛒 Comprar Agora
+                🍎 Comprar iPhone 16 Agora
               </button>
             </div>
           </div>
@@ -59,24 +86,33 @@ export default function Home() {
       {/* Features Section */}
       <section className="features-section">
         <div className="container">
-          <h2 className="section-title">Por que escolher o SmartFone Pro?</h2>
+          <h2 className="section-title">Por que o iPhone 16 é revolucionário?</h2>
           
           <div className="features-grid">
             <div className="feature-card">
-              <div className="feature-icon">📸</div>
-              <h3>Câmera Profissional</h3>
+              <div className="feature-icon">🚀</div>
+              <h3>Chip A18 Pro</h3>
               <p>
-                Câmera principal de 108MP com estabilização óptica, 
-                capturando momentos com qualidade profissional.
+                O chip mais rápido do mundo com 6 núcleos de CPU e 16 núcleos de GPU, 
+                oferecendo performance incomparável.
               </p>
             </div>
             
             <div className="feature-card">
-              <div className="feature-icon">⚡</div>
-              <h3>Performance Extrema</h3>
+              <div className="feature-icon">📸</div>
+              <h3>Câmera Pro de 48MP</h3>
               <p>
-                Processador Snapdragon 8 Gen 2 com 12GB de RAM, 
-                garantindo velocidade e fluidez em todas as tarefas.
+                Sistema de câmera tripla com sensor principal de 48MP, 
+                estabilização óptica e zoom óptico de 5x.
+              </p>
+            </div>
+            
+            <div className="feature-card">
+              <div className="feature-icon">🖥️</div>
+              <h3>Tela Super Retina XDR</h3>
+              <p>
+                Display de 6.7" com tecnologia OLED, 120Hz ProMotion e 
+                brilho máximo de 2000 nits.
               </p>
             </div>
             
@@ -84,26 +120,17 @@ export default function Home() {
               <div className="feature-icon">🔋</div>
               <h3>Bateria de Longa Duração</h3>
               <p>
-                5000mAh com carregamento rápido de 100W, 
-                você passa o dia todo sem se preocupar com a bateria.
-              </p>
-            </div>
-            
-            <div className="feature-card">
-              <div className="feature-icon">🖥️</div>
-              <h3>Tela Imersiva</h3>
-              <p>
-                Display AMOLED de 6.7" com 120Hz de taxa de atualização, 
-                proporcionando uma experiência visual incrível.
+                Até 29 horas de reprodução de vídeo e carregamento 
+                MagSafe de 20W para máxima conveniência.
               </p>
             </div>
             
             <div className="feature-card">
               <div className="feature-icon">🔒</div>
-              <h3>Segurança Avançada</h3>
+              <h3>Face ID Avançado</h3>
               <p>
-                Sensor de impressão digital ultrarrápido e reconhecimento facial 3D, 
-                mantendo seus dados sempre seguros.
+                Reconhecimento facial ultrarrápido e seguro, 
+                desbloqueando seu iPhone instantaneamente.
               </p>
             </div>
             
@@ -111,8 +138,8 @@ export default function Home() {
               <div className="feature-icon">🌐</div>
               <h3>5G Ultra Rápido</h3>
               <p>
-                Conectividade 5G de última geração, 
-                navegue e baixe arquivos com velocidade impressionante.
+                Conectividade 5G de última geração com velocidades 
+                de download de até 10Gbps.
               </p>
             </div>
           </div>
@@ -128,30 +155,15 @@ export default function Home() {
             <div className="testimonial-card">
               <div className="stars">⭐⭐⭐⭐⭐</div>
               <div className="testimonial-header">
-                <div className="testimonial-avatar">M</div>
+                <div className="testimonial-avatar">C</div>
                 <div className="testimonial-info">
-                  <h4>Maria Silva</h4>
+                  <h4>Carlos Silva</h4>
                   <p>São Paulo, SP</p>
                 </div>
               </div>
               <div className="testimonial-text">
-                "Incrível! A câmera é espetacular e a bateria dura o dia todo. 
+                "Incrível! A câmera é espetacular e a performance é absurda. 
                 Valeu cada centavo investido!"
-              </div>
-            </div>
-            
-            <div className="testimonial-card">
-              <div className="stars">⭐⭐⭐⭐⭐</div>
-              <div className="testimonial-header">
-                <div className="testimonial-avatar">J</div>
-                <div className="testimonial-info">
-                  <h4>João Santos</h4>
-                  <p>Rio de Janeiro, RJ</p>
-                </div>
-              </div>
-              <div className="testimonial-text">
-                "Performance excepcional! Jogos rodam perfeitamente e 
-                a tela é simplesmente incrível."
               </div>
             </div>
             
@@ -161,12 +173,27 @@ export default function Home() {
                 <div className="testimonial-avatar">A</div>
                 <div className="testimonial-info">
                   <h4>Ana Costa</h4>
+                  <p>Rio de Janeiro, RJ</p>
+                </div>
+              </div>
+              <div className="testimonial-text">
+                "Melhor iPhone que já tive! Design elegante, 
+                câmera profissional e velocidade impressionante."
+              </div>
+            </div>
+            
+            <div className="testimonial-card">
+              <div className="stars">⭐⭐⭐⭐⭐</div>
+              <div className="testimonial-header">
+                <div className="testimonial-avatar">M</div>
+                <div className="testimonial-info">
+                  <h4>Marcos Santos</h4>
                   <p>Belo Horizonte, MG</p>
                 </div>
               </div>
               <div className="testimonial-text">
-                "Melhor smartphone que já tive! Design elegante, 
-                câmera profissional e velocidade impressionante."
+                "Performance excepcional! Jogos rodam perfeitamente e 
+                a tela é simplesmente incrível."
               </div>
             </div>
           </div>
@@ -177,9 +204,9 @@ export default function Home() {
       <section className="guarantee-section">
         <div className="container">
           <div className="guarantee-icon">🛡️</div>
-          <h3>Garantia de 2 Anos</h3>
+          <h3>Garantia Apple de 1 Ano</h3>
           <p>
-            Compre com total segurança! Oferecemos garantia de 2 anos em todo o produto, 
+            Compre com total segurança! Seu iPhone 16 vem com garantia oficial Apple de 1 ano, 
             incluindo peças e mão de obra. Se não ficar satisfeito, devolvemos seu dinheiro em até 30 dias.
           </p>
         </div>
@@ -188,10 +215,10 @@ export default function Home() {
       {/* CTA Section */}
       <section className="cta-section">
         <div className="container">
-          <h2>Oferta Limitada - Não Perca!</h2>
+          <h2>Oferta Exclusiva - Não Perca!</h2>
           <p>
-            Apenas 50 unidades disponíveis com 50% de desconto. 
-            Garanta o seu SmartFone Pro antes que acabe!
+            Apenas 100 unidades disponíveis com 30% de desconto. 
+            Garanta o seu iPhone 16 Pro Max antes que acabe!
           </p>
           
           <div className="form-container">
@@ -211,12 +238,19 @@ export default function Home() {
                 placeholder="WhatsApp"
                 className="form-input"
               />
+              <select className="form-input">
+                <option>Escolha a cor</option>
+                <option>Preto Titânio</option>
+                <option>Branco Titânio</option>
+                <option>Dourado Titânio</option>
+                <option>Azul Titânio</option>
+              </select>
               <button className="btn-primary" style={{ width: '100%', fontSize: '1.2rem' }}>
-                🚀 QUERO MEU SMARTFONE PRO AGORA!
+                🍎 QUERO MEU IPHONE 16 AGORA!
               </button>
             </form>
             <p style={{ fontSize: '0.9rem', color: '#6b7280', marginTop: '20px', textAlign: 'center' }}>
-              Pagamento seguro via PIX, cartão ou boleto
+              Pagamento seguro via PIX, cartão ou boleto | Entrega em até 48h
             </p>
           </div>
         </div>
@@ -225,7 +259,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2024 SmartFone Pro. Todos os direitos reservados.</p>
+          <p>&copy; 2024 iPhone 16 Pro Max. Todos os direitos reservados.</p>
           <p style={{ marginTop: '10px', fontSize: '0.9rem', opacity: '0.8' }}>
             Produto fictício criado para demonstração
           </p>
