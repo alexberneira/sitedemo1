@@ -1,12 +1,23 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({ 
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800'],
+  variable: '--font-poppins'
+})
 
 export const metadata: Metadata = {
-  title: 'Hello World - Vercel',
-  description: 'Um projeto Hello World para deploy na Vercel',
+  title: 'Dr. Lucas Almeida - Odontologia Estética | São Paulo',
+  description: 'Especialista em odontologia estética com mais de 10 anos de experiência. Implantes, lentes de contato dental, clareamento e ortodontia. Agende sua consulta gratuita.',
+  keywords: 'dentista, odontologia estética, implantes, lentes de contato dental, clareamento, ortodontia, São Paulo',
+  openGraph: {
+    title: 'Dr. Lucas Almeida - Odontologia Estética',
+    description: 'Especialista em odontologia estética com mais de 10 anos de experiência.',
+    type: 'website',
+    locale: 'pt_BR',
+  },
 }
 
 export default function RootLayout({
@@ -15,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt-BR" className={poppins.variable}>
+      <body className={`${poppins.className} font-sans`}>{children}</body>
     </html>
   )
 } 
